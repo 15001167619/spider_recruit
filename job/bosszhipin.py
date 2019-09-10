@@ -119,7 +119,7 @@ class SpiderBossZhiPin:
                 else:
                     jobHtml = ''
             except Exception as e:
-                print('获取职位招聘地址失败，原因：')
+                print('获取职位招聘地址失败，原因：'+jobUrl)
                 raise e
             finally:
                 jobUrl = jobUrl.replace("page="+str(pageNum-1),"page=pageNum")
